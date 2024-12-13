@@ -1,0 +1,284 @@
+/* * {
+    border: 1px solid red;
+} */
+#tudo {
+    border: 1px solid rgb(0, 0, 0);
+    margin: 0 auto;
+    width: 60%;
+    height: 1626px;
+}
+
+/* Estilização do cabeçalho ------------------------------------------ */
+.logo-titulo {
+    background-color: #0d7bc4;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+#titulo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 250%;
+    margin-left: 40%;
+}
+#img-logo {
+    width: 70px;
+    height: 70px;
+    padding-left: 10px;
+}
+
+/* Barra de pesquisa ------------------------------------------ */
+.pesquisa {
+    background-color: #d0daea;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+#barra-pesquisa {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0; 
+    border-radius: 25px;
+    margin-top: 7px;
+    margin-left: 5px;
+    padding: 5px 15px;
+    width: 30%;
+    height: 15px;
+}
+#barra-pesquisa #icone {
+    width: 20px; /* Tamanho da imagem da lupa */
+    margin-right: 10px;
+}
+#barra-pesquisa input {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 13px;
+    flex: 1;
+}
+.tarefas {
+    color: black;
+    text-decoration: none;
+    padding-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+#tarefas {
+    margin-left: 30%;
+}
+.icone {
+    width: 15px;
+    padding-right: 5px;
+}
+
+/* Estilização do menu --------------------------------------------- */
+#home {
+    width: 100%;
+}
+#navegacao {
+    display: flex;   
+    list-style-type: none;
+    margin: 0;
+    padding: 1%;
+    width: 98%;
+    text-align: center;
+    background-color: #77beea;
+}
+#navegacao li {
+    width: 100%;
+    border-right: 1px solid black;
+}
+#navegacao a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    transition: color 0.3s; background-color: 0.3s;
+}
+
+#navegacao a:hover {
+    color: #0d7bc4; 
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+/* Estilização do Conteúdo */
+
+/* Imagem ---------------------------------------------------- */
+#tiposonibus {
+    width: 100%;
+}
+
+/* Carrousel ------------------------------------------------- */
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    display: block;
+}
+
+/* Radio buttons para alternar */
+input[type="radio"] {
+    display: none;
+}
+
+/* Controle das setas */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Posições das imagens */
+#image1:checked ~ .carousel-images {
+    transform: translateX(0%);
+}
+#image2:checked ~ .carousel-images {
+    transform: translateX(-100%);
+}
+#image3:checked ~ .carousel-images {
+    transform: translateX(-200%);
+}
+
+/* --------- */
+
+#slide-carousel {
+    margin-left: 16%;
+}
+
+/* Esilização opções de partida ----------------------------------- */
+#titulo-simular {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+fieldset {
+    background-color:#dedfdf;
+    border: #dedfdf;
+}
+#simular {
+    display: block;
+    align-items: center;
+}
+#simular img {
+    width: 3%;
+}
+#simular input {
+    border: none;
+    outline: none;
+    background: none;
+    background-color: #f0f0f0; 
+    border-radius: 25px;
+    padding: 8px 20px;
+    width: 60%;
+    margin-top: 10px;
+}
+.input {
+    margin-left: 20%;
+}
+#simular button {
+    float: right;
+    padding: 15px;
+    border-radius: 30px;
+    margin-right: 90px;
+    margin-top: 20px;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    border-style: none;
+    background-color: #0d7bc4;
+    color: #f0f0f0;
+}
+
+/* Estilização de imagem do ônibus e dicas ------------------------------------*/
+#dicas {
+    display: flex;
+}
+#dicas img {
+    width: 50%;
+    padding: 10px;
+}
+#instrucoes {
+    margin: 0 auto;  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #77beea;
+    border-radius: 20px;
+}
+#instrucoes h3 {
+    text-align: center;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+/* Estilização do rodapé ---------------------------------------------------- */
+#informacoes {
+    margin-top: 50px;
+    display: flex;
+    background-color: rgb(141, 141, 141);
+    height: 130px;
+}
+#informacoes ul {
+    list-style-type: none;
+    color: #f0f0f0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    margin-left: 20%;
+}
+#viajoo {
+    height: 70px;
+    background-color: rgb(95, 94, 94);
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 120%;
+
+}
+#viajoo h2 {
+    padding-left: 15px;
+}
+#viajoo img {
+    width: 50px;
+    height: 50px;
+    padding-top: 12px;
+    padding-left: 5px;
+}
+#viajoo p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 15%;
+    font-size: 80%;
+}

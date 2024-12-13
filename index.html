@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="tudo">
+        <div class="cabecalho">
+            <div class="logo-titulo">
+                <h2 id="titulo">Viajoo</h2>
+                <img id="img-logo" src="/Imagens/Viagem.png" alt="logo">
+            </div>
+            <div class="pesquisa">
+                <div id="barra-pesquisa">
+                    <img src="/Imagens/lupa.png" alt="Lupa" id="icone">
+                    <input type="text" placeholder="Pra onde ir?" />
+                </div>
+                <div id="tarefas">
+                    <a class="tarefas" href="#"><img src="/Imagens/sinal-de-interrogacao.png" alt="icone ajuda" class="icone">Central de ajuda</a>
+                    <a class="tarefas" href="#"><img src="/Imagens/do-utilizador.png" alt="icone perfil" class="icone">Login</a>
+                </div>
+                <!-- <input type="search" id="barra-pesquisa" placeholder="Pra onde ir?"> -->
+                
+
+            </div>
+            <div id="home">
+                <ul id="navegacao">
+                    <li class="home"><a href="#">Home</a></li>
+                    <li class="pacotes"><a href="#">Pacotes</a></li>
+                    <li class="destinos"><a href="#">Destinos</a></li>
+                    <li class="promocoes"><a href="#">Promoções</a></li>
+                    <li class="fale-conosco"><a href="#">Fale Conosco</a></li>
+                    <li class="sobre"><a href="#">Sobre nós</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="conteudo">
+            <img src="/Imagens/Captura de tela 2024-11-13 101811.png" alt="Tipos de ônibus" id="tiposonibus">
+
+            <br>
+
+            <div id="slide-carousel">
+                <div class="carousel">
+                    <!-- Radio buttons para selecionar as imagens -->
+                    <input type="radio" name="carousel" id="image1" checked>
+                    <input type="radio" name="carousel" id="image2">
+                    <input type="radio" name="carousel" id="image3">
+            
+                    <!-- Carrossel de imagens -->
+                    <div class="carousel-images">
+                        <img src="/Imagens/destinos-nacionais-curitiba-820x547.jpeg" alt="Imagem 1">
+                        <img src="/Imagens/melhores-destinos-nacionais-chapada-diamantina-820x547.jpeg" alt="Imagem 2">
+                        <img src="/Imagens/pomerode-melhor-destino-2023-820x547.jpeg" alt="Imagem 3">
+                    </div>
+            
+                    <!-- Controles de navegação -->
+                    <label for="image3" class="carousel-control prev">&#10094;</label>
+                    <label for="image2" class="carousel-control next">&#10095;</label>
+                    <label for="image1" class="carousel-control prev">&#10094;</label>
+                    <label for="image3" class="carousel-control next">&#10095;</label>
+                    <label for="image2" class="carousel-control prev">&#10094;</label>
+                    <label for="image1" class="carousel-control next">&#10095;</label>
+                </div>
+            </div>
+
+            <br>
+
+            <div id="simular">
+                <fieldset>
+                    <h1 id="titulo-simular">Simule sua passagem de ônibus da Viação Viajoo. Sem taxas.</h1>
+                    <div class="input">
+                        <label for="Partida"><img src="/Imagens/local.png" alt="Partida"></label>
+                        <input type="text" placeholder="Partindo de">
+                    </div>
+
+                    <div class="input">
+                        <label for="Chegada"><img src="/Imagens/chegada.png" alt="Chegada"></label>
+                        <input type="text" placeholder="Indo para">
+                    </div>
+
+                    <div class="input">
+                        <label for="Saida"><img src="/Imagens/calendario.png" alt="Saida"></label>
+                        <input type="text" placeholder="Data de saída">
+                    </div>
+
+                    <div class="input">
+                        <label for="Retorno"><img src="/Imagens/calendario.png" alt="Retorno"></label>
+                        <input type="text" placeholder="Data de retorno">
+                    </div>
+
+                    <div>
+                        <button>Simular Passagem</button>
+                    </div>
+                </fieldset>
+            </div>
+
+            <br>
+
+            <div id="dicas">
+                <img src="/Imagens/onibus.png" alt="Icone de ônibus">
+                <div id="instrucoes">
+                    <h3>Siga essas dicas para ter uma ótima viagem!</h3>
+                    <p>
+                        <ol>
+                            <li>Confirme reservas: Verifique passagens, hospedagem e passeios, e tenha cópias dos comprovantes.</li>
+                            <li>Revise documentação: Cheque passaporte, visto e vacinas obrigatórias para o destino.</li>
+                            <li>Regras de bagagem: Confira limites de peso e dimensões para evitar taxas extras.</li>
+                            <li>Seguro viagem: Considere contratar para cobertura em emergências e imprevistos.</li>
+                            <li>Informe-se sobre o destino: Pesquise clima, atrações, câmbio e transporte local.</li>
+                        </ol>
+                    </p>
+                </div>    
+            </div>
+        </div>
+
+        <div class="rodape">
+            <div id="informacoes">
+                <div>
+                    <ul>
+                        <li><strong>Inicio</strong></li>
+                        <li>Novidades</li>
+                        <li>Destinos</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><strong>Sobre nós</strong></li>
+                        <li>Informações técnicas</li>
+                        <li>Contato</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><strong>Suporte</strong></li>
+                        <li>FAQ</li>
+                        <li>Telefones</li>
+                        <li>Chat</li>
+                        <li>Ouvidoria</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><strong>Informações</strong></li>
+                        <li>Politica de reembolso</li>
+                        <li>Tratamento de dados</li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div id="viajoo">
+                <h2>Viajoo</h2>
+                <img src="/Imagens/Viagem.png" alt="logo">
+
+                <p>Todos os direitos reservados.</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
